@@ -214,7 +214,7 @@ main(void) {
                 GPIO15
 	);
 
-	spi_reset(SPI1); 
+	rcc_periph_reset_pulse(RST_SPI1);
 	spi_init_master(
 		SPI1,
                 SPI_CR1_BAUDRATE_FPCLK_DIV_256,
